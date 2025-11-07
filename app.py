@@ -6,6 +6,17 @@ import matplotlib as mpl
 import plotly.graph_objects as go
 import plotly.express as px
 
+hide_github_icon = """
+<style>
+.viewerBadge_container_1QSob, .viewerBadge_link1S137, .viewerBadge_text_1JaDK {
+    display: none;
+}
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+
+st.markdown(hide_github_icon, unsafe_allow_html=True)
 # -------------------------------
 # Load dataset
 # -------------------------------
@@ -808,4 +819,5 @@ elif choice == "User Choice Analysis":
 
 else:
     st.info("Visualization under development. Please check back later!")
+
 
