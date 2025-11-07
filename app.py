@@ -6,6 +6,10 @@ import matplotlib as mpl
 import plotly.graph_objects as go
 import plotly.express as px
 
+# app.py
+import streamlit as st
+
+# MUST be first Streamlit command in the process
 st.set_page_config(
     page_title="Netflix Data Analysis",
     page_icon="🎬",
@@ -16,6 +20,9 @@ st.set_page_config(
         'About': None
     }
 )
+
+st.title("Test - remove GitHub icon")
+st.write("If this still shows the GitHub icon, continue to step 2.")
 
 # -------------------------------
 # Load dataset
@@ -819,6 +826,7 @@ elif choice == "User Choice Analysis":
 
 else:
     st.info("Visualization under development. Please check back later!")
+
 
 
 
