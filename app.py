@@ -8,15 +8,16 @@ import plotly.express as px
 
 import streamlit as st
 
-hide_github_icon = """
-<style>
-.viewerBadge_container_1QSob, .viewerBadge_link1S137, .viewerBadge_text_1JaDK {
-    display: none;
-}
-</style>
-"""
-
-st.markdown(hide_github_icon, unsafe_allow_html=True)
+st.set_page_config(
+    page_title="Netflix Data Analysis",
+    page_icon="🎬",
+    layout="wide",
+    menu_items={
+        'Get Help': None,
+        'Report a bug': None,
+        'About': None
+    }
+)
 # -------------------------------
 # Load dataset
 # -------------------------------
@@ -819,6 +820,7 @@ elif choice == "User Choice Analysis":
 
 else:
     st.info("Visualization under development. Please check back later!")
+
 
 
 
