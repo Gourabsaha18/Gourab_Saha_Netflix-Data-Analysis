@@ -21,9 +21,6 @@ st.set_page_config(
     }
 )
 
-st.title("Test - remove GitHub icon")
-st.write("If this still shows the GitHub icon, continue to step 2.")
-
 # -------------------------------
 # Load dataset
 # -------------------------------
@@ -826,6 +823,7 @@ elif choice == "User Choice Analysis":
 
 else:
     st.info("Visualization under development. Please check back later!")
+
 
 
 
