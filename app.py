@@ -6,8 +6,6 @@ import matplotlib as mpl
 import plotly.graph_objects as go
 import plotly.express as px
 
-import streamlit as st
-
 st.set_page_config(
     page_title="Netflix Data Analysis",
     page_icon="🎬",
@@ -18,6 +16,7 @@ st.set_page_config(
         'About': None
     }
 )
+
 # -------------------------------
 # Load dataset
 # -------------------------------
@@ -820,6 +819,7 @@ elif choice == "User Choice Analysis":
 
 else:
     st.info("Visualization under development. Please check back later!")
+
 
 
 
